@@ -1,4 +1,4 @@
-# Version: 0.1.10
+# Version: 0.1.1
 FROM python:3.6
 WORKDIR /app
 ADD requirements.txt /app/requirements.txt
