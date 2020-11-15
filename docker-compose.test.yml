@@ -1,11 +1,15 @@
+version: '2'
+
+services:
+
 sut:
         build: .
-        dockerfile: Dockerfile.test
+                dockerfile: Dockerfile.test
         links:
                 - web
 web:
         build: .
-        dockerfile: Dockerfile
+                dockerfile: Dockerfile
         links:
                 - redis
 redis:
