@@ -1,7 +1,7 @@
 from flask import Flask
 from redis import Redis
 
-app = Flask(_name_)
+app = Flask(__name__)
 redis = Redis(host="redis")
 
 @app.route ("/")
@@ -12,5 +12,5 @@ def hello():
             "<br/>"
     return html.format(visits=visits)
 
-if_name_== "_main_":
+if(__name__== "__main__"):
     app.run(host="0.0.0.0", port=80)
